@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 
 # Dosya yolunu tam olarak belirtiyoruz
-file_path = r'C:\Users\Barış\Desktop\soru3_data.xlsx'
+file_path = 'excel_files/soru3_data.xlsx'
 
 # Dosyayı yükle
 df = pd.read_excel(file_path, header=None)
@@ -47,6 +47,6 @@ print("Gauss Yumuşatma Filtresi Sonucu:\n", output_data)
 output_df = pd.DataFrame(output_data)
 
 # Sonucu bir Excel dosyasına kaydetme
-output_file_path = r'C:\Users\Barış\Desktop\gaussian_blur_results.xlsx'
+output_file_path = 'excel_files/gaussian_blur_results.xlsx'
 output_df.to_excel(output_file_path, index=False, header=False)
 print(f'Sonuç başarıyla {output_file_path} dosyasına kaydedildi.')
